@@ -1,0 +1,268 @@
+
+/* CONFIGURAÇÕES GERAIS DO SITE */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d1f7f2;
+    color: hsl(325, 89%, 82%);
+    line-height: 1.6;
+}
+
+
+/* MENU DE NAVEGAÇÃO */
+
+.navbar {
+    background-color: #fcc0e3 !important;
+    border-bottom: 2px solid #ffb0e5;
+}
+
+.navbar-brand {
+    color: #5ba6fc !important;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: #ffa5da !important;
+    margin-left: 10px;
+}
+
+.navbar .nav-link:hover {
+    color: #000000 !important;
+}
+
+
+/* APRESENTAÇÃO PESSOAL */
+
+.secao-inicio {
+    padding: 65px 0 45px;
+    background-color: #ffbdeb;
+}
+
+.secao-inicio .row.align-items-center {
+    row-gap: 30px;
+}
+
+.secao-inicio h1 {
+    color: #000000;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.secao-inicio h3 {
+    color: #fdff9d;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.secao-inicio p {
+    color: #000000;
+}
+
+
+/* FOTO DE PERFIL */
+
+.foto-perfil {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 18px;
+    border: 3px solid #d1246c;
+}
+
+
+/* SEÇÕES DO PORTFÓLIO */
+
+.secao {
+    padding: 60px 0;
+}
+
+.titulo-secao {
+    text-align: center;
+    color: #60aaff;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.texto-secao {
+    text-align: center;
+    color: #4e92f1;
+    margin-bottom: 35px;
+}
+
+
+/* CARDS */
+
+.card {
+    height: 100%;
+    background-color: #f393c0;
+    color: #f1f5f9;
+    border: 1px solid #ff9ec3;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 22px;
+}
+
+.card h4 {
+    color: #160303;
+    margin-bottom: 15px;
+}
+
+.card p,
+.card li {
+    color: #5c84bb;
+}
+
+.card ul {
+    padding-left: 25px;
+}
+
+
+/* IMAGENS DOS PROJETOS */
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* BOTÕES */
+
+.btn-primary {
+    background-color: #1677e8;
+    border-color: #1677e8;
+    border-radius: 9px;
+    padding: 9px 18px;
+}
+
+.btn-primary:hover {
+    background-color: #095fc2;
+    border-color: #095fc2;
+}
+
+.btn-outline-light {
+    border-radius: 9px;
+}
+
+
+/* FORMULÁRIO DE CONTATO */
+
+.form-label {
+    color: #60aaff;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #eef3fc;
+    color: #ffffff;
+    border: 1px solid #40536e;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    background-color: #0d1728;
+    color: #ffffff;
+    border-color: #287ce0;
+    box-shadow: 0 0 0 3px rgba(40, 124, 224, 0.2);
+}
+
+.form-control::placeholder {
+    color: #a6b3c5;
+}
+
+
+/* PAINEL ADMINISTRATIVO */
+
+#painelAdmin {
+    background-color: #f7b6de;
+    padding: 50px 0;
+}
+
+/* Garante que o painel comece escondido */
+#painelAdmin.d-none {
+    display: none !important;
+}
+
+#painelAdmin table {
+    color: #f1f5f9;
+    vertical-align: middle;
+}
+
+#painelAdmin th {
+    color: #60aaff;
+}
+
+#painelAdmin td {
+    word-break: break-word;
+}
+
+
+/* RODAPÉ */
+
+.rodape {
+    background-color: #e927a8;
+    border-top: 2px solid #287ce0;
+    padding: 25px 0;
+    margin-top: 30px;
+}
+
+.rodape p {
+    color: #d5deeb;
+    margin-bottom: 15px;
+}
+
+
+/* AJUSTES PARA CELULARES */
+
+@media (max-width: 767px) {
+
+    .secao-inicio {
+        padding: 40px 0;
+    }
+
+    .secao-inicio h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .secao-inicio h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .secao-inicio p {
+        text-align: center;
+    }
+
+    .foto-perfil {
+        max-width: 230px;
+        height: 270px;
+        margin-bottom: 20px;
+    }
+
+    .secao {
+        padding: 40px 0;
+    }
+
+    .titulo-secao {
+        font-size: 25px;
+    }
+
+}
+ 
